@@ -235,7 +235,7 @@ def on_load(server: PluginServerInterface, old):
             src.reply('§a已将您传送至上个地点')
 
     server.register_command(
-        Literal('!!spec')
+        Literal('!!c')
         .requires(lambda src: src.has_permission(permissions.spec))
         .runs(change_mode)
         .then(
